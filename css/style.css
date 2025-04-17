@@ -1,0 +1,119 @@
+body{
+    background-color: #DEE2E6;
+}
+
+#hero {
+    position: relative;
+    overflow: hidden; /* To contain the slider */
+    height: 600px; /* Adjust as needed */
+}
+
+.nav-item{
+    text-align: center;
+}
+
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers the entire container */
+    z-index: 1; /* Place video behind the text */
+}
+
+#hero-carousel {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10; /* Ensure text is on top of images */
+    width: 100%; /* Make sure it spans the width */
+}
+
+.welcome-text {
+    font-size: 3.5rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 32px 0;
+    border-radius: 50px;
+    width: 50%; 
+}
+
+.heading-text{
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+}
+
+.food-category{
+    text-align: center;
+    margin: 100px 0;
+    font-weight: bolder;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+.menu-item-details {
+    flex-grow: 1;
+}
+.menu-item-price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+
+    .welcome-text{
+        font-size: 1.5rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-item img {
+        width: 80%; 
+        height: auto; 
+        margin-right: 0; 
+        margin-bottom: 10px;
+    }
+    .menu-item-details {
+        font-size: 1.2em; 
+    }
+    .card-img-top {
+        height: auto !important;
+    }
+}
+
